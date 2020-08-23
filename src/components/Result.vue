@@ -14,6 +14,9 @@ export default {
   },
   methods: {
     display: function() {
+      if (this.age === '0') {
+        return ' 無限大 '
+      }
       const expectancy = 100 - Math.round(100 * Math.log(this.age) / Math.log(80))
       return expectancy >= 0 ? expectancy : 0
     }

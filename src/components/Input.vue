@@ -1,10 +1,11 @@
 <template>
   <div>
+    私は現在
     <input
       :type="type"
       :value="age"
-      @input="updateValue"
     />
+    才です。
   </div>
 </template>
 
@@ -15,10 +16,5 @@ export default {
     age: { type: String },
     type: { type: String }
   },
-  methods: {
-    updateValue: function() {
-
-    }
-  }
 }
 </script>
